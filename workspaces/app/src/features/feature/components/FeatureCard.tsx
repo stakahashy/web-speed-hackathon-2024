@@ -56,7 +56,7 @@ const FeatureCard: React.FC<Props> = ({ book }) => {
     <_Wrapper href={`/books/${book.id}`}>
       {imageUrl != null && (
         <_ImgWrapper>
-          <Image alt={book.image.alt} height={96} objectFit="cover" src={imageUrl} width={96} />
+          <Image alt={book.image.alt} height={96} objectFit="cover" src={imageUrl} width={96} loading="eager" />
         </_ImgWrapper>
       )}
 
